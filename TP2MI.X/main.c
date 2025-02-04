@@ -44,6 +44,12 @@
 #include "mcc_generated_files/mcc.h"
 #include "ecran.h"
 
+enum {
+    Neutre,
+    Locked,
+    Unlocked
+};
+
 /*
                          Main application
  */
@@ -71,11 +77,29 @@ void main(void)
     videEcran();
     
     int RxData;
+    uint16_t dutyValue = 43;
+    int Etat = Neutre;
     
     while (1)
     {
+        PWM2_LoadDutyValue(dutyValue);
         RxData = EUSART1_Read();
         printf("%c", RxData);
+        
+        
+//        switch (Etat) {
+//            case Neutre:
+//        }
+        
+        if (dutyValue < 21)
+        {
+            dutyValue = 21;
+        }
+        
+        else if (dutyValue > 71)
+        {
+            dutyValue = 71;
+        }
     }
 }
 /**

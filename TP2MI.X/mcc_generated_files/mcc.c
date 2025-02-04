@@ -53,8 +53,8 @@ void SYSTEM_Initialize(void)
     INTERRUPT_Initialize();
     PIN_MANAGER_Initialize();
     OSCILLATOR_Initialize();
-    TMR2_Initialize();
     PWM2_Initialize();
+    TMR2_Initialize();
     EUSART1_Initialize();
     EUSART2_Initialize();
 }
