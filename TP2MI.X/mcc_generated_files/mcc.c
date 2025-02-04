@@ -50,17 +50,21 @@
 void SYSTEM_Initialize(void)
 {
 
+    INTERRUPT_Initialize();
     PIN_MANAGER_Initialize();
     OSCILLATOR_Initialize();
     ECCP1_Initialize();
+    PWM2_Initialize();
     ADC_Initialize();
+    TMR2_Initialize();
     EUSART1_Initialize();
+    EUSART2_Initialize();
 }
 
 void OSCILLATOR_Initialize(void)
 {
-    // SCS FOSC; HFIOFS not stable; IDLEN disabled; IRCF 8MHz_HF; 
-    OSCCON = 0x60;
+    // SCS FOSC; HFIOFS not stable; IDLEN disabled; IRCF 1MHz_HF; 
+    OSCCON = 0x30;
     // SOSCGO disabled; MFIOSEL disabled; SOSCDRV Low Power; 
     OSCCON2 = 0x00;
     // INTSRC INTRC; PLLEN disabled; TUN 0; 

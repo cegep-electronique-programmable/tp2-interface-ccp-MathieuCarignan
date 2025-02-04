@@ -1,23 +1,23 @@
 /**
-  @Generated PIC10 / PIC12 / PIC16 / PIC18 MCUs Header File
+  PWM2 Generated Driver File
 
-  @Company:
+  @Company
     Microchip Technology Inc.
 
-  @File Name:
-    mcc.h
+  @File Name
+    pwm2.h
 
-  @Summary:
-    This is the mcc.h file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+  @Summary
+    This is the generated driver implementation file for the PWM2 driver using PIC10 / PIC12 / PIC16 / PIC18 MCUs
 
-  @Description:
-    This header file provides implementations for driver APIs for all modules selected in the GUI.
+  @Description
+    This header file provides implementations for driver APIs for PWM2.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.8
         Device            :  PIC18F25K80
-        Driver Version    :  2.00
+        Driver Version    :  2.01
     The generated drivers are tested against the following:
-        Compiler          :  XC8 2.36 and above or later
+        Compiler          :  XC8 2.36 and above
         MPLAB             :  MPLAB X 6.00
 */
 
@@ -44,51 +44,93 @@
     SOFTWARE.
 */
 
-#ifndef MCC_H
-#define	MCC_H
+#ifndef PWM2_H
+#define PWM2_H
+
+/**
+  Section: Included Files
+*/
+
 #include <xc.h>
-#include "device_config.h"
-#include "pin_manager.h"
 #include <stdint.h>
 #include <stdbool.h>
-#include <conio.h>
-#include "interrupt_manager.h"
-#include "pwm2.h"
-#include "eccp1.h"
-#include "tmr2.h"
-#include "adc.h"
-#include "eusart2.h"
-#include "eusart1.h"
 
+#ifdef __cplusplus  // Provide C++ Compatibility
 
+    extern "C" {
+
+#endif
 
 /**
- * @Param
-    none
- * @Returns
-    none
- * @Description
-    Initializes the device to the default states configured in the
- *                  MCC GUI
- * @Example
-    SYSTEM_Initialize(void);
- */
-void SYSTEM_Initialize(void);
+  Section: PWM Module APIs
+*/
 
 /**
- * @Param
-    none
- * @Returns
-    none
- * @Description
-    Initializes the oscillator to the default states configured in the
- *                  MCC GUI
- * @Example
-    OSCILLATOR_Initialize(void);
- */
-void OSCILLATOR_Initialize(void);
+  @Summary
+    Initializes the PWM2
 
-#endif	/* MCC_H */
+  @Description
+    This routine initializes the PWM2 module.
+    This routine must be called before any other PWM2 routine is called.
+    This routine should only be called once during system initialization.
+
+  @Preconditions
+    None
+
+  @Param
+    None
+
+  @Returns
+    None
+
+  @Comment
+    
+
+ @Example
+    <code>
+    uint16_t dutycycle;
+
+    CCP2_Initialize();
+	PWM2_LoadDutyValue(dutycycle);
+    </code>
+ */
+void PWM2_Initialize(void);
+
+/**
+  @Summary
+    Loads 16-bit duty cycle.
+
+  @Description
+    This routine loads the 16 bit duty cycle value.
+
+  @Preconditions
+    PWM2_Initialize() function should have been called
+    before calling this function.
+
+  @Param
+    Pass 16bit duty cycle value.
+
+  @Returns
+    None
+
+  @Example
+    <code>
+    uint16_t dutycycle;
+
+    PWM2_Initialize();
+    PWM2_LoadDutyValue(dutycycle);
+    </code>
+*/
+void PWM2_LoadDutyValue(uint16_t dutyValue);
+
+        
+#ifdef __cplusplus  // Provide C++ Compatibility
+
+    }
+
+#endif
+
+#endif	//PWM2_H
 /**
  End of File
 */
