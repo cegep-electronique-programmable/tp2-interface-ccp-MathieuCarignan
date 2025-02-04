@@ -1619,8 +1619,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/eusart1.c: 104:     TXSTA1 = 0x24;
 [e = _TXSTA1 -> -> 36 `i `uc ]
 "107
-[; ;mcc_generated_files/eusart1.c: 107:     SPBRG1 = 0x19;
-[e = _SPBRG1 -> -> 25 `i `uc ]
+[; ;mcc_generated_files/eusart1.c: 107:     SPBRG1 = 0x0C;
+[e = _SPBRG1 -> -> 12 `i `uc ]
 "110
 [; ;mcc_generated_files/eusart1.c: 110:     SPBRGH1 = 0x00;
 [e = _SPBRGH1 -> -> 0 `i `uc ]

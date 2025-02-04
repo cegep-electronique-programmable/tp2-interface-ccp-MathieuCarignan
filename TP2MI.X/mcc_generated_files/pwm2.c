@@ -55,7 +55,7 @@
   Section: Macro Declarations
 */
 
-#define PWM2_INITIALIZE_DUTY_VALUE    224
+#define PWM2_INITIALIZE_DUTY_VALUE    46
 
 /**
   Section: PWM Module APIs
@@ -65,11 +65,11 @@ void PWM2_Initialize(void)
 {
     // Set the PWM2 to the options selected in the User Interface
 	
-	// CCP2M PWM; DC2B 0; 
-	CCP2CON = 0x0C;    
+	// CCP2M PWM; DC2B 2; 
+	CCP2CON = 0x2C;    
 	
-	// CCPR2L 56; 
-	CCPR2L = 0x38;    
+	// CCPR2L 11; 
+	CCPR2L = 0x0B;    
 	
 	// CCPR2H 0; 
 	CCPR2H = 0x00;    

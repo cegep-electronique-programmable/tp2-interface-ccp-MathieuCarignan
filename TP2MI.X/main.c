@@ -70,9 +70,12 @@ void main(void)
 
     videEcran();
     
+    int RxData;
+    
     while (1)
     {
-        
+        RxData = EUSART1_Read();
+        printf("%c", RxData);
     }
 }
 /**

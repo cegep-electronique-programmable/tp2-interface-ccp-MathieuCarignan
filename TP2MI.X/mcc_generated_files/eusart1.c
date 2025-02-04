@@ -104,7 +104,7 @@ void EUSART1_Initialize(void)
     TXSTA1 = 0x24;
 
     // 
-    SPBRG1 = 0x19;
+    SPBRG1 = 0x0C;
 
     // 
     SPBRGH1 = 0x00;

@@ -1,144 +1,7 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"35414 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 35414:     struct {
-[s S1411 :1 `uc 1 ]
-[n S1411 . NOT_BOR ]
-"35417
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 35417:     struct {
-[s S1412 :1 `uc 1 :1 `uc 1 ]
-[n S1412 . . NOT_POR ]
-"35421
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 35421:     struct {
-[s S1413 :2 `uc 1 :1 `uc 1 ]
-[n S1413 . . NOT_PD ]
-"35425
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 35425:     struct {
-[s S1414 :3 `uc 1 :1 `uc 1 ]
-[n S1414 . . NOT_TO ]
-"35429
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 35429:     struct {
-[s S1415 :4 `uc 1 :1 `uc 1 ]
-[n S1415 . . NOT_RI ]
-"35433
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 35433:     struct {
-[s S1416 :5 `uc 1 :1 `uc 1 ]
-[n S1416 . . NOT_CM ]
-"35437
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 35437:     struct {
-[s S1417 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1417 . nBOR nPOR nPD nTO nRI nCM SBOREN IPEN ]
-"35447
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 35447:     struct {
-[s S1418 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1418 . BOR POR PD TO RI CM ]
-"35413
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 35413: typedef union {
-[u S1410 `S1411 1 `S1412 1 `S1413 1 `S1414 1 `S1415 1 `S1416 1 `S1417 1 `S1418 1 ]
-[n S1410 . . . . . . . . . ]
-"35456
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 35456: extern volatile RCONbits_t RCONbits __attribute__((address(0xFD0)));
-[v _RCONbits `VS1410 ~T0 @X0 0 e@4048 ]
-[t ~ __interrupt . k ]
-[t T5 __interrupt ]
-"36655
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 36655:     struct {
-[s S1492 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1492 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
-"36665
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 36665:     struct {
-[s S1493 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1493 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
-"36675
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 36675:     struct {
-[s S1494 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1494 . . GIEL GIEH ]
-"36654
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 36654: typedef union {
-[u S1491 `S1492 1 `S1493 1 `S1494 1 ]
-[n S1491 . . . . ]
-"36681
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 36681: extern volatile INTCONbits_t INTCONbits __attribute__((address(0xFF2)));
-[v _INTCONbits `VS1491 ~T0 @X0 0 e@4082 ]
-"31452
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 31452:     struct {
-[s S1203 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1203 . . CCP1IE CCP2IE CTMUIE TX2IE RC2IE ]
-"31460
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 31460:     struct {
-[s S1204 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1204 . . RXB1IE TXB0IE TXB1IE TXB2IE ]
-"31467
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 31467:     struct {
-[s S1205 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
-[n S1205 . . RXBNIE . TXBNIE ]
-"31451
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 31451: typedef union {
-[u S1202 `S1203 1 `S1204 1 `S1205 1 ]
-[n S1202 . . . . ]
-"31474
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 31474: extern volatile PIE3bits_t PIE3bits __attribute__((address(0xFA3)));
-[v _PIE3bits `VS1202 ~T0 @X0 0 e@4003 ]
-"31540
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 31540:     struct {
-[s S1207 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1207 . . CCP1IF CCP2IF CTMUIF TX2IF RC2IF ]
-"31548
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 31548:     struct {
-[s S1208 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
-[n S1208 . . RXBNIF . TXBNIF ]
-"31539
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 31539: typedef union {
-[u S1206 `S1207 1 `S1208 1 ]
-[n S1206 . . . ]
-"31555
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 31555: extern volatile PIR3bits_t PIR3bits __attribute__((address(0xFA4)));
-[v _PIR3bits `VS1206 ~T0 @X0 0 e@4004 ]
-[v F12557 `(v ~T0 @X0 0 tf ]
-"94 mcc_generated_files/eusart2.h
-[; ;mcc_generated_files/eusart2.h: 94: extern void (*EUSART2_TxDefaultInterruptHandler)(void);
-[v _EUSART2_TxDefaultInterruptHandler `*F12557 ~T0 @X0 0 e ]
-[v F12559 `(v ~T0 @X0 0 tf ]
-"95
-[; ;mcc_generated_files/eusart2.h: 95: extern void (*EUSART2_RxDefaultInterruptHandler)(void);
-[v _EUSART2_RxDefaultInterruptHandler `*F12559 ~T0 @X0 0 e ]
-"31077 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 31077:     struct {
-[s S1185 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1185 . TMR1IE TMR2IE TMR1GIE SSPIE TX1IE RC1IE ADIE ]
-"31086
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 31086:     struct {
-[s S1186 :4 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1186 . . TXIE RCIE ]
-"31076
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 31076: typedef union {
-[u S1184 `S1185 1 `S1186 1 ]
-[n S1184 . . . ]
-"31092
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 31092: extern volatile PIE1bits_t PIE1bits __attribute__((address(0xF9D)));
-[v _PIE1bits `VS1184 ~T0 @X0 0 e@3997 ]
-"31148
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 31148:     struct {
-[s S1188 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1188 . TMR1IF TMR2IF TMR1GIF SSPIF TX1IF RC1IF ADIF ]
-"31157
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 31157:     struct {
-[s S1189 :4 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1189 . . TXIF RCIF ]
-"31147
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 31147: typedef union {
-[u S1187 `S1188 1 `S1189 1 ]
-[n S1187 . . . ]
-"31163
-[; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 31163: extern volatile PIR1bits_t PIR1bits __attribute__((address(0xF9E)));
-[v _PIR1bits `VS1187 ~T0 @X0 0 e@3998 ]
-[v F12603 `(v ~T0 @X0 0 tf ]
-"95 mcc_generated_files/eusart1.h
-[; ;mcc_generated_files/eusart1.h: 95: extern void (*EUSART1_TxDefaultInterruptHandler)(void);
-[v _EUSART1_TxDefaultInterruptHandler `*F12603 ~T0 @X0 0 e ]
-[v F12605 `(v ~T0 @X0 0 tf ]
-"96
-[; ;mcc_generated_files/eusart1.h: 96: extern void (*EUSART1_RxDefaultInterruptHandler)(void);
-[v _EUSART1_RxDefaultInterruptHandler `*F12605 ~T0 @X0 0 e ]
+"348 ./mcc_generated_files/eusart2.h
+[; ;./mcc_generated_files/eusart2.h: 348: void EUSART2_Write(uint8_t txData);
+[v _EUSART2_Write `(v ~T0 @X0 0 ef1`uc ]
 "54 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 54: __asm("RXERRCNT equ 0E41h");
 [; <" RXERRCNT equ 0E41h ;# ">
@@ -1513,119 +1376,129 @@ Version 4.0 HI-TECH Software Intermediate Code
 "37211
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 37211: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"52 mcc_generated_files/interrupt_manager.c
-[; ;mcc_generated_files/interrupt_manager.c: 52: void INTERRUPT_Initialize (void)
-[v _INTERRUPT_Initialize `(v ~T0 @X0 1 ef ]
-"53
-[; ;mcc_generated_files/interrupt_manager.c: 53: {
+"5 ecran.c
+[; ;ecran.c: 5: void ecranAllume(void)
+[v _ecranAllume `(v ~T0 @X0 1 ef ]
+"6
+[; ;ecran.c: 6: {
 {
-[e :U _INTERRUPT_Initialize ]
+[e :U _ecranAllume ]
 [f ]
-"55
-[; ;mcc_generated_files/interrupt_manager.c: 55:     RCONbits.IPEN = 0;
-[e = . . _RCONbits 6 7 -> -> 0 `i `uc ]
-"56
-[; ;mcc_generated_files/interrupt_manager.c: 56: }
+"7
+[; ;ecran.c: 7:     EUSART2_Write(0xFE);
+[e ( _EUSART2_Write (1 -> -> 254 `i `uc ]
+"8
+[; ;ecran.c: 8:     EUSART2_Write(0x41);
+[e ( _EUSART2_Write (1 -> -> 65 `i `uc ]
+"9
+[; ;ecran.c: 9: }
 [e :UE 1532 ]
 }
-[v $root$_INTERRUPT_InterruptManager `(v ~T0 @X0 0 e ]
-"58
-[; ;mcc_generated_files/interrupt_manager.c: 58: void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
-[v _INTERRUPT_InterruptManager `(v ~T5 @X0 1 ef ]
-"59
-[; ;mcc_generated_files/interrupt_manager.c: 59: {
+"11
+[; ;ecran.c: 11: void ecranEteint(void)
+[v _ecranEteint `(v ~T0 @X0 1 ef ]
+"12
+[; ;ecran.c: 12: {
 {
-[e :U _INTERRUPT_InterruptManager ]
+[e :U _ecranEteint ]
 [f ]
-"61
-[; ;mcc_generated_files/interrupt_manager.c: 61:     if(INTCONbits.PEIE == 1)
-[e $ ! == -> . . _INTCONbits 1 6 `i -> 1 `i 1534  ]
-"62
-[; ;mcc_generated_files/interrupt_manager.c: 62:     {
-{
-"63
-[; ;mcc_generated_files/interrupt_manager.c: 63:         if(PIE3bits.TX2IE == 1 && PIR3bits.TX2IF == 1)
-[e $ ! && == -> . . _PIE3bits 0 4 `i -> 1 `i == -> . . _PIR3bits 0 4 `i -> 1 `i 1535  ]
-"64
-[; ;mcc_generated_files/interrupt_manager.c: 64:         {
-{
-"65
-[; ;mcc_generated_files/interrupt_manager.c: 65:             EUSART2_TxDefaultInterruptHandler();
-[e ( *U _EUSART2_TxDefaultInterruptHandler ..  ]
-"66
-[; ;mcc_generated_files/interrupt_manager.c: 66:         }
-}
-[e $U 1536  ]
-"67
-[; ;mcc_generated_files/interrupt_manager.c: 67:         else if(PIE3bits.RC2IE == 1 && PIR3bits.RC2IF == 1)
-[e :U 1535 ]
-[e $ ! && == -> . . _PIE3bits 0 5 `i -> 1 `i == -> . . _PIR3bits 0 5 `i -> 1 `i 1537  ]
-"68
-[; ;mcc_generated_files/interrupt_manager.c: 68:         {
-{
-"69
-[; ;mcc_generated_files/interrupt_manager.c: 69:             EUSART2_RxDefaultInterruptHandler();
-[e ( *U _EUSART2_RxDefaultInterruptHandler ..  ]
-"70
-[; ;mcc_generated_files/interrupt_manager.c: 70:         }
-}
-[e $U 1538  ]
-"71
-[; ;mcc_generated_files/interrupt_manager.c: 71:         else if(PIE1bits.TX1IE == 1 && PIR1bits.TX1IF == 1)
-[e :U 1537 ]
-[e $ ! && == -> . . _PIE1bits 0 4 `i -> 1 `i == -> . . _PIR1bits 0 4 `i -> 1 `i 1539  ]
-"72
-[; ;mcc_generated_files/interrupt_manager.c: 72:         {
-{
-"73
-[; ;mcc_generated_files/interrupt_manager.c: 73:             EUSART1_TxDefaultInterruptHandler();
-[e ( *U _EUSART1_TxDefaultInterruptHandler ..  ]
-"74
-[; ;mcc_generated_files/interrupt_manager.c: 74:         }
-}
-[e $U 1540  ]
-"75
-[; ;mcc_generated_files/interrupt_manager.c: 75:         else if(PIE1bits.RC1IE == 1 && PIR1bits.RC1IF == 1)
-[e :U 1539 ]
-[e $ ! && == -> . . _PIE1bits 0 5 `i -> 1 `i == -> . . _PIR1bits 0 5 `i -> 1 `i 1541  ]
-"76
-[; ;mcc_generated_files/interrupt_manager.c: 76:         {
-{
-"77
-[; ;mcc_generated_files/interrupt_manager.c: 77:             EUSART1_RxDefaultInterruptHandler();
-[e ( *U _EUSART1_RxDefaultInterruptHandler ..  ]
-"78
-[; ;mcc_generated_files/interrupt_manager.c: 78:         }
-}
-[e $U 1542  ]
-"79
-[; ;mcc_generated_files/interrupt_manager.c: 79:         else
-[e :U 1541 ]
-"80
-[; ;mcc_generated_files/interrupt_manager.c: 80:         {
-{
-"82
-[; ;mcc_generated_files/interrupt_manager.c: 82:         }
-}
-[e :U 1542 ]
-[e :U 1540 ]
-[e :U 1538 ]
-[e :U 1536 ]
-"83
-[; ;mcc_generated_files/interrupt_manager.c: 83:     }
-}
-[e $U 1543  ]
-"84
-[; ;mcc_generated_files/interrupt_manager.c: 84:     else
-[e :U 1534 ]
-"85
-[; ;mcc_generated_files/interrupt_manager.c: 85:     {
-{
-"87
-[; ;mcc_generated_files/interrupt_manager.c: 87:     }
-}
-[e :U 1543 ]
-"88
-[; ;mcc_generated_files/interrupt_manager.c: 88: }
+"13
+[; ;ecran.c: 13:     EUSART2_Write(0xFE);
+[e ( _EUSART2_Write (1 -> -> 254 `i `uc ]
+"14
+[; ;ecran.c: 14:     EUSART2_Write(0x42);
+[e ( _EUSART2_Write (1 -> -> 66 `i `uc ]
+"15
+[; ;ecran.c: 15: }
 [e :UE 1533 ]
+}
+"17
+[; ;ecran.c: 17: void curseurPosition(int position)
+[v _curseurPosition `(v ~T0 @X0 1 ef1`i ]
+"18
+[; ;ecran.c: 18: {
+{
+[e :U _curseurPosition ]
+"17
+[; ;ecran.c: 17: void curseurPosition(int position)
+[v _position `i ~T0 @X0 1 r1 ]
+"18
+[; ;ecran.c: 18: {
+[f ]
+"19
+[; ;ecran.c: 19:     EUSART2_Write(0xFE);
+[e ( _EUSART2_Write (1 -> -> 254 `i `uc ]
+"20
+[; ;ecran.c: 20:     EUSART2_Write(0x45);
+[e ( _EUSART2_Write (1 -> -> 69 `i `uc ]
+"21
+[; ;ecran.c: 21:     EUSART2_Write(position);
+[e ( _EUSART2_Write (1 -> _position `uc ]
+"22
+[; ;ecran.c: 22: }
+[e :UE 1534 ]
+}
+"23
+[; ;ecran.c: 23: void videEcran(void)
+[v _videEcran `(v ~T0 @X0 1 ef ]
+"24
+[; ;ecran.c: 24: {
+{
+[e :U _videEcran ]
+[f ]
+"25
+[; ;ecran.c: 25:     EUSART2_Write(0xFE);
+[e ( _EUSART2_Write (1 -> -> 254 `i `uc ]
+"26
+[; ;ecran.c: 26:     EUSART2_Write(0x51);
+[e ( _EUSART2_Write (1 -> -> 81 `i `uc ]
+"27
+[; ;ecran.c: 27: }
+[e :UE 1535 ]
+}
+"29
+[; ;ecran.c: 29: void ecrireCaractere(char caractere)
+[v _ecrireCaractere `(v ~T0 @X0 1 ef1`uc ]
+"30
+[; ;ecran.c: 30: {
+{
+[e :U _ecrireCaractere ]
+"29
+[; ;ecran.c: 29: void ecrireCaractere(char caractere)
+[v _caractere `uc ~T0 @X0 1 r1 ]
+"30
+[; ;ecran.c: 30: {
+[f ]
+"31
+[; ;ecran.c: 31:     EUSART2_Write(caractere);
+[e ( _EUSART2_Write (1 -> _caractere `uc ]
+"32
+[; ;ecran.c: 32: }
+[e :UE 1536 ]
+}
+"34
+[; ;ecran.c: 34: void BR (char BaudRate)
+[v _BR `(v ~T0 @X0 1 ef1`uc ]
+"35
+[; ;ecran.c: 35: {
+{
+[e :U _BR ]
+"34
+[; ;ecran.c: 34: void BR (char BaudRate)
+[v _BaudRate `uc ~T0 @X0 1 r1 ]
+"35
+[; ;ecran.c: 35: {
+[f ]
+"36
+[; ;ecran.c: 36:     EUSART2_Write(0xFE);
+[e ( _EUSART2_Write (1 -> -> 254 `i `uc ]
+"37
+[; ;ecran.c: 37:     EUSART2_Write(0x61);
+[e ( _EUSART2_Write (1 -> -> 97 `i `uc ]
+"38
+[; ;ecran.c: 38:     EUSART2_Write(BaudRate);
+[e ( _EUSART2_Write (1 -> _BaudRate `uc ]
+"39
+[; ;ecran.c: 39: }
+[e :UE 1537 ]
 }

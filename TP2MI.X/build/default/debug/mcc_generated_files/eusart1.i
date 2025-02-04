@@ -1,4 +1,4 @@
-# 1 "mcc_generated_files/eusart2.c"
+# 1 "mcc_generated_files/eusart1.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,10 +6,10 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "mcc_generated_files/eusart2.c" 2
-# 50 "mcc_generated_files/eusart2.c"
-# 1 "mcc_generated_files/eusart2.h" 1
-# 54 "mcc_generated_files/eusart2.h"
+# 1 "mcc_generated_files/eusart1.c" 2
+# 50 "mcc_generated_files/eusart1.c"
+# 1 "mcc_generated_files/eusart1.h" 1
+# 54 "mcc_generated_files/eusart1.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\xc.h" 1 3
 # 18 "C:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -20146,11 +20146,166 @@ __attribute__((__unsupported__("The " "Write_b_eep" " routine is no longer suppo
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 33 "C:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\xc.h" 2 3
-# 54 "mcc_generated_files/eusart2.h" 2
+# 54 "mcc_generated_files/eusart1.h" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\c99\\stdbool.h" 1 3
-# 55 "mcc_generated_files/eusart2.h" 2
-# 75 "mcc_generated_files/eusart2.h"
+# 55 "mcc_generated_files/eusart1.h" 2
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\c99\\stdio.h" 1 3
+# 24 "C:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\c99\\stdio.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 12 "C:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef void * va_list[1];
+
+
+
+
+typedef void * __isoc_va_list[1];
+# 143 "C:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef __int24 ssize_t;
+# 255 "C:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long long off_t;
+# 409 "C:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef struct _IO_FILE FILE;
+# 25 "C:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\c99\\stdio.h" 2 3
+# 52 "C:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\c99\\stdio.h" 3
+typedef union _G_fpos64_t {
+ char __opaque[16];
+ double __align;
+} fpos_t;
+
+extern FILE *const stdin;
+extern FILE *const stdout;
+extern FILE *const stderr;
+
+
+
+
+
+FILE *fopen(const char *restrict, const char *restrict);
+FILE *freopen(const char *restrict, const char *restrict, FILE *restrict);
+int fclose(FILE *);
+
+int remove(const char *);
+int rename(const char *, const char *);
+
+int feof(FILE *);
+int ferror(FILE *);
+int fflush(FILE *);
+void clearerr(FILE *);
+
+int fseek(FILE *, long, int);
+long ftell(FILE *);
+void rewind(FILE *);
+
+int fgetpos(FILE *restrict, fpos_t *restrict);
+int fsetpos(FILE *, const fpos_t *);
+
+size_t fread(void *restrict, size_t, size_t, FILE *restrict);
+size_t fwrite(const void *restrict, size_t, size_t, FILE *restrict);
+
+int fgetc(FILE *);
+int getc(FILE *);
+int getchar(void);
+
+
+
+
+
+int ungetc(int, FILE *);
+int getch(void);
+
+int fputc(int, FILE *);
+int putc(int, FILE *);
+int putchar(int);
+
+
+
+
+
+void putch(char);
+
+char *fgets(char *restrict, int, FILE *restrict);
+
+char *gets(char *);
+
+
+int fputs(const char *restrict, FILE *restrict);
+int puts(const char *);
+
+__attribute__((__format__(__printf__, 1, 2)))
+int printf(const char *restrict, ...);
+__attribute__((__format__(__printf__, 2, 3)))
+int fprintf(FILE *restrict, const char *restrict, ...);
+__attribute__((__format__(__printf__, 2, 3)))
+int sprintf(char *restrict, const char *restrict, ...);
+__attribute__((__format__(__printf__, 3, 4)))
+int snprintf(char *restrict, size_t, const char *restrict, ...);
+
+__attribute__((__format__(__printf__, 1, 0)))
+int vprintf(const char *restrict, __isoc_va_list);
+int vfprintf(FILE *restrict, const char *restrict, __isoc_va_list);
+__attribute__((__format__(__printf__, 2, 0)))
+int vsprintf(char *restrict, const char *restrict, __isoc_va_list);
+__attribute__((__format__(__printf__, 3, 0)))
+int vsnprintf(char *restrict, size_t, const char *restrict, __isoc_va_list);
+
+__attribute__((__format__(__scanf__, 1, 2)))
+int scanf(const char *restrict, ...);
+__attribute__((__format__(__scanf__, 2, 3)))
+int fscanf(FILE *restrict, const char *restrict, ...);
+__attribute__((__format__(__scanf__, 2, 3)))
+int sscanf(const char *restrict, const char *restrict, ...);
+
+__attribute__((__format__(__scanf__, 1, 0)))
+int vscanf(const char *restrict, __isoc_va_list);
+int vfscanf(FILE *restrict, const char *restrict, __isoc_va_list);
+__attribute__((__format__(__scanf__, 2, 0)))
+int vsscanf(const char *restrict, const char *restrict, __isoc_va_list);
+
+void perror(const char *);
+
+int setvbuf(FILE *restrict, char *restrict, int, size_t);
+void setbuf(FILE *restrict, char *restrict);
+
+char *tmpnam(char *);
+FILE *tmpfile(void);
+
+
+
+
+FILE *fmemopen(void *restrict, size_t, const char *restrict);
+FILE *open_memstream(char **, size_t *);
+FILE *fdopen(int, const char *);
+FILE *popen(const char *, const char *);
+int pclose(FILE *);
+int fileno(FILE *);
+int fseeko(FILE *, off_t, int);
+off_t ftello(FILE *);
+int dprintf(int, const char *restrict, ...);
+int vdprintf(int, const char *restrict, __isoc_va_list);
+void flockfile(FILE *);
+int ftrylockfile(FILE *);
+void funlockfile(FILE *);
+int getc_unlocked(FILE *);
+int getchar_unlocked(void);
+int putc_unlocked(int, FILE *);
+int putchar_unlocked(int);
+ssize_t getdelim(char **restrict, size_t *restrict, int, FILE *restrict);
+ssize_t getline(char **restrict, size_t *restrict, FILE *restrict);
+int renameat(int, const char *, int, const char *);
+char *ctermid(char *);
+
+
+
+
+
+
+
+char *tempnam(const char *, const char *);
+# 57 "mcc_generated_files/eusart1.h" 2
+# 76 "mcc_generated_files/eusart1.h"
 typedef union {
     struct {
         unsigned perr : 1;
@@ -20159,269 +20314,278 @@ typedef union {
         unsigned reserved : 5;
     };
     uint8_t status;
-}eusart2_status_t;
+}eusart1_status_t;
 
 
 
 
-extern volatile uint8_t eusart2TxBufferRemaining;
-extern volatile uint8_t eusart2RxCount;
+extern volatile uint8_t eusart1TxBufferRemaining;
+extern volatile uint8_t eusart1RxCount;
 
 
 
 
-extern void (*EUSART2_TxDefaultInterruptHandler)(void);
-extern void (*EUSART2_RxDefaultInterruptHandler)(void);
-# 117 "mcc_generated_files/eusart2.h"
-void EUSART2_Initialize(void);
-# 165 "mcc_generated_files/eusart2.h"
-_Bool EUSART2_is_tx_ready(void);
-# 213 "mcc_generated_files/eusart2.h"
-_Bool EUSART2_is_rx_ready(void);
-# 260 "mcc_generated_files/eusart2.h"
-_Bool EUSART2_is_tx_done(void);
-# 308 "mcc_generated_files/eusart2.h"
-eusart2_status_t EUSART2_get_last_status(void);
-# 328 "mcc_generated_files/eusart2.h"
-uint8_t EUSART2_Read(void);
-# 348 "mcc_generated_files/eusart2.h"
-void EUSART2_Write(uint8_t txData);
-# 369 "mcc_generated_files/eusart2.h"
-void EUSART2_Transmit_ISR(void);
-# 390 "mcc_generated_files/eusart2.h"
-void EUSART2_Receive_ISR(void);
-# 411 "mcc_generated_files/eusart2.h"
-void EUSART2_RxDataHandler(void);
-# 429 "mcc_generated_files/eusart2.h"
-void EUSART2_SetFramingErrorHandler(void (* interruptHandler)(void));
-# 447 "mcc_generated_files/eusart2.h"
-void EUSART2_SetOverrunErrorHandler(void (* interruptHandler)(void));
-# 465 "mcc_generated_files/eusart2.h"
-void EUSART2_SetErrorHandler(void (* interruptHandler)(void));
-# 485 "mcc_generated_files/eusart2.h"
-void EUSART2_SetTxInterruptHandler(void (* interruptHandler)(void));
-# 505 "mcc_generated_files/eusart2.h"
-void EUSART2_SetRxInterruptHandler(void (* interruptHandler)(void));
-# 50 "mcc_generated_files/eusart2.c" 2
-# 62 "mcc_generated_files/eusart2.c"
-volatile uint8_t eusart2TxHead = 0;
-volatile uint8_t eusart2TxTail = 0;
-volatile uint8_t eusart2TxBuffer[8];
-volatile uint8_t eusart2TxBufferRemaining;
+extern void (*EUSART1_TxDefaultInterruptHandler)(void);
+extern void (*EUSART1_RxDefaultInterruptHandler)(void);
+# 118 "mcc_generated_files/eusart1.h"
+void EUSART1_Initialize(void);
+# 166 "mcc_generated_files/eusart1.h"
+_Bool EUSART1_is_tx_ready(void);
+# 214 "mcc_generated_files/eusart1.h"
+_Bool EUSART1_is_rx_ready(void);
+# 261 "mcc_generated_files/eusart1.h"
+_Bool EUSART1_is_tx_done(void);
+# 309 "mcc_generated_files/eusart1.h"
+eusart1_status_t EUSART1_get_last_status(void);
+# 329 "mcc_generated_files/eusart1.h"
+uint8_t EUSART1_Read(void);
+# 349 "mcc_generated_files/eusart1.h"
+void EUSART1_Write(uint8_t txData);
+# 370 "mcc_generated_files/eusart1.h"
+void EUSART1_Transmit_ISR(void);
+# 391 "mcc_generated_files/eusart1.h"
+void EUSART1_Receive_ISR(void);
+# 412 "mcc_generated_files/eusart1.h"
+void EUSART1_RxDataHandler(void);
+# 430 "mcc_generated_files/eusart1.h"
+void EUSART1_SetFramingErrorHandler(void (* interruptHandler)(void));
+# 448 "mcc_generated_files/eusart1.h"
+void EUSART1_SetOverrunErrorHandler(void (* interruptHandler)(void));
+# 466 "mcc_generated_files/eusart1.h"
+void EUSART1_SetErrorHandler(void (* interruptHandler)(void));
+# 486 "mcc_generated_files/eusart1.h"
+void EUSART1_SetTxInterruptHandler(void (* interruptHandler)(void));
+# 506 "mcc_generated_files/eusart1.h"
+void EUSART1_SetRxInterruptHandler(void (* interruptHandler)(void));
+# 50 "mcc_generated_files/eusart1.c" 2
+# 62 "mcc_generated_files/eusart1.c"
+volatile uint8_t eusart1TxHead = 0;
+volatile uint8_t eusart1TxTail = 0;
+volatile uint8_t eusart1TxBuffer[8];
+volatile uint8_t eusart1TxBufferRemaining;
 
-volatile uint8_t eusart2RxHead = 0;
-volatile uint8_t eusart2RxTail = 0;
-volatile uint8_t eusart2RxBuffer[8];
-volatile eusart2_status_t eusart2RxStatusBuffer[8];
-volatile uint8_t eusart2RxCount;
-volatile eusart2_status_t eusart2RxLastError;
-
-
+volatile uint8_t eusart1RxHead = 0;
+volatile uint8_t eusart1RxTail = 0;
+volatile uint8_t eusart1RxBuffer[8];
+volatile eusart1_status_t eusart1RxStatusBuffer[8];
+volatile uint8_t eusart1RxCount;
+volatile eusart1_status_t eusart1RxLastError;
 
 
-void (*EUSART2_TxDefaultInterruptHandler)(void);
-void (*EUSART2_RxDefaultInterruptHandler)(void);
 
-void (*EUSART2_FramingErrorHandler)(void);
-void (*EUSART2_OverrunErrorHandler)(void);
-void (*EUSART2_ErrorHandler)(void);
 
-void EUSART2_DefaultFramingErrorHandler(void);
-void EUSART2_DefaultOverrunErrorHandler(void);
-void EUSART2_DefaultErrorHandler(void);
+void (*EUSART1_TxDefaultInterruptHandler)(void);
+void (*EUSART1_RxDefaultInterruptHandler)(void);
 
-void EUSART2_Initialize(void)
+void (*EUSART1_FramingErrorHandler)(void);
+void (*EUSART1_OverrunErrorHandler)(void);
+void (*EUSART1_ErrorHandler)(void);
+
+void EUSART1_DefaultFramingErrorHandler(void);
+void EUSART1_DefaultOverrunErrorHandler(void);
+void EUSART1_DefaultErrorHandler(void);
+
+void EUSART1_Initialize(void)
 {
 
-    PIE3bits.RC2IE = 0;
-    EUSART2_SetRxInterruptHandler(EUSART2_Receive_ISR);
-    PIE3bits.TX2IE = 0;
-    EUSART2_SetTxInterruptHandler(EUSART2_Transmit_ISR);
+    PIE1bits.RC1IE = 0;
+    EUSART1_SetRxInterruptHandler(EUSART1_Receive_ISR);
+    PIE1bits.TX1IE = 0;
+    EUSART1_SetTxInterruptHandler(EUSART1_Transmit_ISR);
 
 
 
-    BAUDCON2 = 0x08;
+    BAUDCON1 = 0x08;
 
 
-    RCSTA2 = 0x90;
+    RCSTA1 = 0x90;
 
 
-    TXSTA2 = 0x26;
+    TXSTA1 = 0x24;
 
 
-    SPBRG2 = 0x0C;
+    SPBRG1 = 0x19;
 
 
-    SPBRGH2 = 0x00;
+    SPBRGH1 = 0x00;
 
 
-    EUSART2_SetFramingErrorHandler(EUSART2_DefaultFramingErrorHandler);
-    EUSART2_SetOverrunErrorHandler(EUSART2_DefaultOverrunErrorHandler);
-    EUSART2_SetErrorHandler(EUSART2_DefaultErrorHandler);
+    EUSART1_SetFramingErrorHandler(EUSART1_DefaultFramingErrorHandler);
+    EUSART1_SetOverrunErrorHandler(EUSART1_DefaultOverrunErrorHandler);
+    EUSART1_SetErrorHandler(EUSART1_DefaultErrorHandler);
 
-    eusart2RxLastError.status = 0;
-
-
-    eusart2TxHead = 0;
-    eusart2TxTail = 0;
-    eusart2TxBufferRemaining = sizeof(eusart2TxBuffer);
-
-    eusart2RxHead = 0;
-    eusart2RxTail = 0;
-    eusart2RxCount = 0;
+    eusart1RxLastError.status = 0;
 
 
-    PIE3bits.RC2IE = 1;
+    eusart1TxHead = 0;
+    eusart1TxTail = 0;
+    eusart1TxBufferRemaining = sizeof(eusart1TxBuffer);
+
+    eusart1RxHead = 0;
+    eusart1RxTail = 0;
+    eusart1RxCount = 0;
+
+
+    PIE1bits.RC1IE = 1;
 }
 
-_Bool EUSART2_is_tx_ready(void)
+_Bool EUSART1_is_tx_ready(void)
 {
-    return (eusart2TxBufferRemaining ? 1 : 0);
+    return (eusart1TxBufferRemaining ? 1 : 0);
 }
 
-_Bool EUSART2_is_rx_ready(void)
+_Bool EUSART1_is_rx_ready(void)
 {
-    return (eusart2RxCount ? 1 : 0);
+    return (eusart1RxCount ? 1 : 0);
 }
 
-_Bool EUSART2_is_tx_done(void)
+_Bool EUSART1_is_tx_done(void)
 {
-    return TXSTA2bits.TRMT;
+    return TXSTA1bits.TRMT;
 }
 
-eusart2_status_t EUSART2_get_last_status(void){
-    return eusart2RxLastError;
+eusart1_status_t EUSART1_get_last_status(void){
+    return eusart1RxLastError;
 }
 
-uint8_t EUSART2_Read(void)
+uint8_t EUSART1_Read(void)
 {
     uint8_t readValue = 0;
 
-    while(0 == eusart2RxCount)
+    while(0 == eusart1RxCount)
     {
     }
 
-    eusart2RxLastError = eusart2RxStatusBuffer[eusart2RxTail];
+    eusart1RxLastError = eusart1RxStatusBuffer[eusart1RxTail];
 
-    readValue = eusart2RxBuffer[eusart2RxTail++];
-    if(sizeof(eusart2RxBuffer) <= eusart2RxTail)
+    readValue = eusart1RxBuffer[eusart1RxTail++];
+    if(sizeof(eusart1RxBuffer) <= eusart1RxTail)
     {
-        eusart2RxTail = 0;
+        eusart1RxTail = 0;
     }
-    PIE3bits.RC2IE = 0;
-    eusart2RxCount--;
-    PIE3bits.RC2IE = 1;
+    PIE1bits.RC1IE = 0;
+    eusart1RxCount--;
+    PIE1bits.RC1IE = 1;
 
     return readValue;
 }
 
-void EUSART2_Write(uint8_t txData)
+void EUSART1_Write(uint8_t txData)
 {
-    while(0 == eusart2TxBufferRemaining)
+    while(0 == eusart1TxBufferRemaining)
     {
     }
 
-    if(0 == PIE3bits.TX2IE)
+    if(0 == PIE1bits.TX1IE)
     {
-        TXREG2 = txData;
+        TXREG1 = txData;
     }
     else
     {
-        PIE3bits.TX2IE = 0;
-        eusart2TxBuffer[eusart2TxHead++] = txData;
-        if(sizeof(eusart2TxBuffer) <= eusart2TxHead)
+        PIE1bits.TX1IE = 0;
+        eusart1TxBuffer[eusart1TxHead++] = txData;
+        if(sizeof(eusart1TxBuffer) <= eusart1TxHead)
         {
-            eusart2TxHead = 0;
+            eusart1TxHead = 0;
         }
-        eusart2TxBufferRemaining--;
+        eusart1TxBufferRemaining--;
     }
-    PIE3bits.TX2IE = 1;
+    PIE1bits.TX1IE = 1;
 }
 
 
-void EUSART2_Transmit_ISR(void)
+
+
+
+
+void putch(char txData)
+{
+    EUSART1_Write(txData);
+}
+
+void EUSART1_Transmit_ISR(void)
 {
 
 
-    if(sizeof(eusart2TxBuffer) > eusart2TxBufferRemaining)
+    if(sizeof(eusart1TxBuffer) > eusart1TxBufferRemaining)
     {
-        TXREG2 = eusart2TxBuffer[eusart2TxTail++];
-        if(sizeof(eusart2TxBuffer) <= eusart2TxTail)
+        TXREG1 = eusart1TxBuffer[eusart1TxTail++];
+        if(sizeof(eusart1TxBuffer) <= eusart1TxTail)
         {
-            eusart2TxTail = 0;
+            eusart1TxTail = 0;
         }
-        eusart2TxBufferRemaining++;
+        eusart1TxBufferRemaining++;
     }
     else
     {
-        PIE3bits.TX2IE = 0;
+        PIE1bits.TX1IE = 0;
     }
 }
 
-void EUSART2_Receive_ISR(void)
+void EUSART1_Receive_ISR(void)
 {
 
-    eusart2RxStatusBuffer[eusart2RxHead].status = 0;
+    eusart1RxStatusBuffer[eusart1RxHead].status = 0;
 
-    if(RCSTA2bits.FERR){
-        eusart2RxStatusBuffer[eusart2RxHead].ferr = 1;
-        EUSART2_FramingErrorHandler();
+    if(RCSTA1bits.FERR){
+        eusart1RxStatusBuffer[eusart1RxHead].ferr = 1;
+        EUSART1_FramingErrorHandler();
     }
 
-    if(RCSTA2bits.OERR){
-        eusart2RxStatusBuffer[eusart2RxHead].oerr = 1;
-        EUSART2_OverrunErrorHandler();
+    if(RCSTA1bits.OERR){
+        eusart1RxStatusBuffer[eusart1RxHead].oerr = 1;
+        EUSART1_OverrunErrorHandler();
     }
 
-    if(eusart2RxStatusBuffer[eusart2RxHead].status){
-        EUSART2_ErrorHandler();
+    if(eusart1RxStatusBuffer[eusart1RxHead].status){
+        EUSART1_ErrorHandler();
     } else {
-        EUSART2_RxDataHandler();
+        EUSART1_RxDataHandler();
     }
 
 
 }
 
-void EUSART2_RxDataHandler(void){
+void EUSART1_RxDataHandler(void){
 
-    eusart2RxBuffer[eusart2RxHead++] = RCREG2;
-    if(sizeof(eusart2RxBuffer) <= eusart2RxHead)
+    eusart1RxBuffer[eusart1RxHead++] = RCREG1;
+    if(sizeof(eusart1RxBuffer) <= eusart1RxHead)
     {
-        eusart2RxHead = 0;
+        eusart1RxHead = 0;
     }
-    eusart2RxCount++;
+    eusart1RxCount++;
 }
 
-void EUSART2_DefaultFramingErrorHandler(void){}
+void EUSART1_DefaultFramingErrorHandler(void){}
 
-void EUSART2_DefaultOverrunErrorHandler(void){
+void EUSART1_DefaultOverrunErrorHandler(void){
 
 
-    RCSTA2bits.CREN = 0;
-    RCSTA2bits.CREN = 1;
+    RCSTA1bits.CREN = 0;
+    RCSTA1bits.CREN = 1;
 
 }
 
-void EUSART2_DefaultErrorHandler(void){
-    EUSART2_RxDataHandler();
+void EUSART1_DefaultErrorHandler(void){
+    EUSART1_RxDataHandler();
 }
 
-void EUSART2_SetFramingErrorHandler(void (* interruptHandler)(void)){
-    EUSART2_FramingErrorHandler = interruptHandler;
+void EUSART1_SetFramingErrorHandler(void (* interruptHandler)(void)){
+    EUSART1_FramingErrorHandler = interruptHandler;
 }
 
-void EUSART2_SetOverrunErrorHandler(void (* interruptHandler)(void)){
-    EUSART2_OverrunErrorHandler = interruptHandler;
+void EUSART1_SetOverrunErrorHandler(void (* interruptHandler)(void)){
+    EUSART1_OverrunErrorHandler = interruptHandler;
 }
 
-void EUSART2_SetErrorHandler(void (* interruptHandler)(void)){
-    EUSART2_ErrorHandler = interruptHandler;
+void EUSART1_SetErrorHandler(void (* interruptHandler)(void)){
+    EUSART1_ErrorHandler = interruptHandler;
 }
 
-void EUSART2_SetTxInterruptHandler(void (* interruptHandler)(void)){
-    EUSART2_TxDefaultInterruptHandler = interruptHandler;
+void EUSART1_SetTxInterruptHandler(void (* interruptHandler)(void)){
+    EUSART1_TxDefaultInterruptHandler = interruptHandler;
 }
 
-void EUSART2_SetRxInterruptHandler(void (* interruptHandler)(void)){
-    EUSART2_RxDefaultInterruptHandler = interruptHandler;
+void EUSART1_SetRxInterruptHandler(void (* interruptHandler)(void)){
+    EUSART1_RxDefaultInterruptHandler = interruptHandler;
 }
