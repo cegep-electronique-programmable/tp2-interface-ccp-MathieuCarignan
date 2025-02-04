@@ -54,9 +54,7 @@
 #include <conio.h>
 #include "interrupt_manager.h"
 #include "pwm2.h"
-#include "eccp1.h"
 #include "tmr2.h"
-#include "adc.h"
 #include "eusart2.h"
 #include "eusart1.h"
 
