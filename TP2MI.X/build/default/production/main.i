@@ -20484,6 +20484,12 @@ void BR (char BaudRate);
 # 45 "main.c" 2
 
 
+enum {
+    Neutre,
+    Locked,
+    Unlocked
+};
+
 
 
 
@@ -20511,10 +20517,35 @@ void main(void)
     videEcran();
 
     int RxData;
+    uint16_t dutyValue = 46;
+    int Etat = Neutre;
 
     while (1)
     {
+        PWM2_LoadDutyValue(dutyValue);
+        printf("Barre ou Debarre?\r\n");
         RxData = EUSART1_Read();
-        printf("%c", RxData);
+        printf("%c\r\n", RxData);
+
+        if (RxData == 'l')
+        {
+            dutyValue = 71;
+            printf("Barre\r\n");
+        }
+        else if (RxData == 'u')
+        {
+            dutyValue = 21;
+            printf("Debarre\r\n");
+        }
+
+        if (dutyValue < 21)
+        {
+            dutyValue = 21;
+        }
+
+        else if (dutyValue > 71)
+        {
+            dutyValue = 71;
+        }
     }
 }

@@ -25,12 +25,19 @@ Version 4.0 HI-TECH Software Intermediate Code
 "57 ./ecran.h
 [; ;./ecran.h: 57: void videEcran(void);
 [v _videEcran `(v ~T0 @X0 0 ef ]
-"329 ./mcc_generated_files/eusart1.h
-[; ;./mcc_generated_files/eusart1.h: 329: uint8_t EUSART1_Read(void);
-[v _EUSART1_Read `(uc ~T0 @X0 0 ef ]
+"81 main.c
+[; ;main.c: 81:     int Etat = Neutre;
+[c E12648 0 1 2 .. ]
+[n E12648 . Neutre Locked Unlocked  ]
+"124 ./mcc_generated_files/pwm2.h
+[; ;./mcc_generated_files/pwm2.h: 124: void PWM2_LoadDutyValue(uint16_t dutyValue);
+[v _PWM2_LoadDutyValue `(v ~T0 @X0 0 ef1`us ]
 "117 C:\Program Files\Microchip\xc8\v2.45\pic\include\c99\stdio.h
 [; ;C:\Program Files\Microchip\xc8\v2.45\pic\include\c99\stdio.h: 117: int printf(const char *restrict, ...);
 [v _printf `(i ~T0 @X0 0 ev`*Cuc ]
+"329 ./mcc_generated_files/eusart1.h
+[; ;./mcc_generated_files/eusart1.h: 329: uint8_t EUSART1_Read(void);
+[v _EUSART1_Read `(uc ~T0 @X0 0 ef ]
 "54 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 54: __asm("RXERRCNT equ 0E41h");
 [; <" RXERRCNT equ 0E41h ;# ">
@@ -1406,50 +1413,129 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 37211: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
 [v $root$_main `(v ~T0 @X0 0 e ]
-"50 main.c
-[; ;main.c: 50: void main(void)
+"56 main.c
+[; ;main.c: 56: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"51
-[; ;main.c: 51: {
+"57
+[; ;main.c: 57: {
 {
 [e :U _main ]
 [f ]
-"53
-[; ;main.c: 53:     SYSTEM_Initialize();
+"59
+[; ;main.c: 59:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"60
-[; ;main.c: 60:     (INTCONbits.GIE = 1);
-[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
 "66
-[; ;main.c: 66:     (INTCONbits.PEIE = 1);
+[; ;main.c: 66:     (INTCONbits.GIE = 1);
+[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
+"72
+[; ;main.c: 72:     (INTCONbits.PEIE = 1);
 [e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
-"71
-[; ;main.c: 71:     videEcran();
-[e ( _videEcran ..  ]
-"73
-[; ;main.c: 73:     int RxData;
-[v _RxData `i ~T0 @X0 1 a ]
-"75
-[; ;main.c: 75:     while (1)
-[e :U 1534 ]
-"76
-[; ;main.c: 76:     {
-{
 "77
-[; ;main.c: 77:         RxData = EUSART1_Read();
-[e = _RxData -> ( _EUSART1_Read ..  `i ]
-"78
-[; ;main.c: 78:         printf("%c", RxData);
-[e ( _printf , (. :s 1C _RxData ]
+[; ;main.c: 77:     videEcran();
+[e ( _videEcran ..  ]
 "79
-[; ;main.c: 79:     }
+[; ;main.c: 79:     int RxData;
+[v _RxData `i ~T0 @X0 1 a ]
+"80
+[; ;main.c: 80:     uint16_t dutyValue = 46;
+[v _dutyValue `us ~T0 @X0 1 a ]
+[e = _dutyValue -> -> 46 `i `us ]
+"81
+[; ;main.c: 81:     int Etat = Neutre;
+[v _Etat `i ~T0 @X0 1 a ]
+[e = _Etat -> . `E12648 0 `i ]
+"83
+[; ;main.c: 83:     while (1)
+[e :U 1534 ]
+"84
+[; ;main.c: 84:     {
+{
+"85
+[; ;main.c: 85:         PWM2_LoadDutyValue(dutyValue);
+[e ( _PWM2_LoadDutyValue (1 _dutyValue ]
+"86
+[; ;main.c: 86:         printf("Barre ou Debarre?\r\n");
+[e ( _printf :s 1C ]
+"87
+[; ;main.c: 87:         RxData = EUSART1_Read();
+[e = _RxData -> ( _EUSART1_Read ..  `i ]
+"88
+[; ;main.c: 88:         printf("%c\r\n", RxData);
+[e ( _printf , (. :s 2C _RxData ]
+"90
+[; ;main.c: 90:         if (RxData == 'l')
+[e $ ! == -> _RxData `ui -> 108 `ui 1536  ]
+"91
+[; ;main.c: 91:         {
+{
+"92
+[; ;main.c: 92:             dutyValue = 71;
+[e = _dutyValue -> -> 71 `i `us ]
+"93
+[; ;main.c: 93:             printf("Barre\r\n");
+[e ( _printf :s 3C ]
+"94
+[; ;main.c: 94:         }
+}
+[e $U 1537  ]
+"95
+[; ;main.c: 95:         else if (RxData == 'u')
+[e :U 1536 ]
+[e $ ! == -> _RxData `ui -> 117 `ui 1538  ]
+"96
+[; ;main.c: 96:         {
+{
+"97
+[; ;main.c: 97:             dutyValue = 21;
+[e = _dutyValue -> -> 21 `i `us ]
+"98
+[; ;main.c: 98:             printf("Debarre\r\n");
+[e ( _printf :s 4C ]
+"99
+[; ;main.c: 99:         }
+}
+[e :U 1538 ]
+[e :U 1537 ]
+"101
+[; ;main.c: 101:         if (dutyValue < 21)
+[e $ ! < -> _dutyValue `ui -> -> 21 `i `ui 1539  ]
+"102
+[; ;main.c: 102:         {
+{
+"103
+[; ;main.c: 103:             dutyValue = 21;
+[e = _dutyValue -> -> 21 `i `us ]
+"104
+[; ;main.c: 104:         }
+}
+[e $U 1540  ]
+"106
+[; ;main.c: 106:         else if (dutyValue > 71)
+[e :U 1539 ]
+[e $ ! > -> _dutyValue `ui -> -> 71 `i `ui 1541  ]
+"107
+[; ;main.c: 107:         {
+{
+"108
+[; ;main.c: 108:             dutyValue = 71;
+[e = _dutyValue -> -> 71 `i `us ]
+"109
+[; ;main.c: 109:         }
+}
+[e :U 1541 ]
+[e :U 1540 ]
+"110
+[; ;main.c: 110:     }
 }
 [e :U 1533 ]
 [e $U 1534  ]
 [e :U 1535 ]
-"80
-[; ;main.c: 80: }
+"111
+[; ;main.c: 111: }
 [e :UE 1532 ]
 }
 [p f _printf 8912896 ]
-[a 1C 37 99 0 ]
+[a 4C 68 101 98 97 114 114 101 13 10 0 ]
+[a 3C 66 97 114 114 101 13 10 0 ]
+[a 2C 37 99 13 10 0 ]
+[a 1C 66 97 114 114 101 32 111 117 32 68 101 98 97 114 114 101 63 13 10 0 ]

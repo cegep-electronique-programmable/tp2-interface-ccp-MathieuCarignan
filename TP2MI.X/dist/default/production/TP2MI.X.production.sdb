@@ -3,13 +3,16 @@
 [d edition pro ]
 [d chip 18F25K80 ]
 [d frameptr 4065 ]
-"83 C:\Documents\Prog\TP2MI.X\mcc_generated_files/adc.c
-[e E12210 . `uc
-channel_CTMU 28
-channel_Temp_diode 29
-channel_Vdd_core 30
-channel_1_024V_bandgap 31
+"81 C:\Documents\Prog\TP2MI.X\main.c
+[e E12648 . `uc
+Neutre 0
+Locked 1
+Unlocked 2
 ]
+"1177 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+"1817
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
 "62 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\float.c
@@ -22,6 +25,12 @@ channel_1_024V_bandgap 31
 [v ___ftmul __ftmul `(f  1 e 4 0 ]
 "19 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "245
@@ -36,16 +45,16 @@ channel_1_024V_bandgap 31
 [v ___omul __omul `(uo  1 e 8 0 ]
 "23 C:\Documents\Prog\TP2MI.X\ecran.c
 [v _videEcran videEcran `(v  1 e 1 0 ]
-"50 C:\Documents\Prog\TP2MI.X\main.c
+"56 C:\Documents\Prog\TP2MI.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"62 C:\Documents\Prog\TP2MI.X\mcc_generated_files/adc.c
-[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
-"49 C:\Documents\Prog\TP2MI.X\mcc_generated_files/eccp1.c
-[v _ECCP1_Initialize ECCP1_Initialize `(v  1 e 1 0 ]
 "88 C:\Documents\Prog\TP2MI.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
+"151
+[v _EUSART1_Read EUSART1_Read `(uc  1 e 1 0 ]
 "173
 [v _EUSART1_Write EUSART1_Write `(v  1 e 1 0 ]
+"201
+[v _putch putch `(v  1 e 1 0 ]
 "206
 [v _EUSART1_Transmit_ISR EUSART1_Transmit_ISR `(v  1 e 1 0 ]
 "225
@@ -100,12 +109,14 @@ channel_1_024V_bandgap 31
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
 "50 C:\Documents\Prog\TP2MI.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
-"64
+"62
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "55 C:\Documents\Prog\TP2MI.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 "64 C:\Documents\Prog\TP2MI.X\mcc_generated_files/pwm2.c
 [v _PWM2_Initialize PWM2_Initialize `(v  1 e 1 0 ]
+"82
+[v _PWM2_LoadDutyValue PWM2_LoadDutyValue `(v  1 e 1 0 ]
 "62 C:\Documents\Prog\TP2MI.X\mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
 "26200 C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h
@@ -142,20 +153,20 @@ channel_1_024V_bandgap 31
 [v _TRISB TRISB `VEuc  1 e 1 @3987 ]
 "30764
 [v _TRISC TRISC `VEuc  1 e 1 @3988 ]
-[s S762 . 1 `uc 1 C1TSEL 1 0 :1:0 
+[s S593 . 1 `uc 1 C1TSEL 1 0 :1:0 
 `uc 1 C2TSEL 1 0 :1:1 
 `uc 1 C3TSEL 1 0 :1:2 
 `uc 1 C4TSEL 1 0 :1:3 
 `uc 1 C5TSEL 1 0 :1:4 
 ]
 "30840
-[u S768 . 1 `S762 1 . 1 0 ]
-[v _CCPTMRSbits CCPTMRSbits `VES768  1 e 1 @3993 ]
+[u S599 . 1 `S593 1 . 1 0 ]
+[v _CCPTMRSbits CCPTMRSbits `VES599  1 e 1 @3993 ]
 "30870
 [v _REFOCON REFOCON `VEuc  1 e 1 @3994 ]
 "30935
 [v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3995 ]
-[s S176 . 1 `uc 1 TMR1IE 1 0 :1:0 
+[s S71 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 TMR1GIE 1 0 :1:2 
 `uc 1 SSPIE 1 0 :1:3 
@@ -164,13 +175,13 @@ channel_1_024V_bandgap 31
 `uc 1 ADIE 1 0 :1:6 
 ]
 "31092
-[s S184 . 1 `uc 1 . 1 0 :4:0 
+[s S79 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 TXIE 1 0 :1:4 
 `uc 1 RCIE 1 0 :1:5 
 ]
-[u S188 . 1 `S176 1 . 1 0 `S184 1 . 1 0 ]
-[v _PIE1bits PIE1bits `VES188  1 e 1 @3997 ]
-[s S681 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[u S83 . 1 `S71 1 . 1 0 `S79 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES83  1 e 1 @3997 ]
+[s S512 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 TMR1GIF 1 0 :1:2 
 `uc 1 SSPIF 1 0 :1:3 
@@ -179,13 +190,13 @@ channel_1_024V_bandgap 31
 `uc 1 ADIF 1 0 :1:6 
 ]
 "31163
-[s S689 . 1 `uc 1 . 1 0 :4:0 
+[s S520 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 TXIF 1 0 :1:4 
 `uc 1 RCIF 1 0 :1:5 
 ]
-[u S693 . 1 `S681 1 . 1 0 `S689 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES693  1 e 1 @3998 ]
-[s S798 . 1 `uc 1 . 1 0 :1:0 
+[u S524 . 1 `S512 1 . 1 0 `S520 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES524  1 e 1 @3998 ]
+[s S629 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 CCP1IE 1 0 :1:1 
 `uc 1 CCP2IE 1 0 :1:2 
 `uc 1 CTMUIE 1 0 :1:3 
@@ -193,20 +204,20 @@ channel_1_024V_bandgap 31
 `uc 1 RC2IE 1 0 :1:5 
 ]
 "31474
-[s S805 . 1 `uc 1 . 1 0 :1:0 
+[s S636 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RXB1IE 1 0 :1:1 
 `uc 1 TXB0IE 1 0 :1:2 
 `uc 1 TXB1IE 1 0 :1:3 
 `uc 1 TXB2IE 1 0 :1:4 
 ]
-[s S811 . 1 `uc 1 . 1 0 :1:0 
+[s S642 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RXBNIE 1 0 :1:1 
 `uc 1 . 1 0 :2:2 
 `uc 1 TXBNIE 1 0 :1:4 
 ]
-[u S816 . 1 `S798 1 . 1 0 `S805 1 . 1 0 `S811 1 . 1 0 ]
-[v _PIE3bits PIE3bits `VES816  1 e 1 @4003 ]
-[s S1216 . 1 `uc 1 . 1 0 :1:0 
+[u S647 . 1 `S629 1 . 1 0 `S636 1 . 1 0 `S642 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES647  1 e 1 @4003 ]
+[s S1047 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 CCP1IF 1 0 :1:1 
 `uc 1 CCP2IF 1 0 :1:2 
 `uc 1 CTMUIF 1 0 :1:3 
@@ -214,16 +225,16 @@ channel_1_024V_bandgap 31
 `uc 1 RC2IF 1 0 :1:5 
 ]
 "31555
-[s S1223 . 1 `uc 1 . 1 0 :1:0 
+[s S1054 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RXBNIF 1 0 :1:1 
 `uc 1 . 1 0 :2:2 
 `uc 1 TXBNIF 1 0 :1:4 
 ]
-[u S1228 . 1 `S1216 1 . 1 0 `S1223 1 . 1 0 ]
-[v _PIR3bits PIR3bits `VES1228  1 e 1 @4004 ]
+[u S1059 . 1 `S1047 1 . 1 0 `S1054 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES1059  1 e 1 @4004 ]
 "31656
 [v _RCSTA2 RCSTA2 `VEuc  1 e 1 @4006 ]
-[s S323 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S218 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -233,7 +244,7 @@ channel_1_024V_bandgap 31
 `uc 1 SPEN 1 0 :1:7 
 ]
 "31692
-[s S953 . 1 `uc 1 RX9D2 1 0 :1:0 
+[s S784 . 1 `uc 1 RX9D2 1 0 :1:0 
 `uc 1 OERR2 1 0 :1:1 
 `uc 1 FERR2 1 0 :1:2 
 `uc 1 ADDEN2 1 0 :1:3 
@@ -242,36 +253,36 @@ channel_1_024V_bandgap 31
 `uc 1 RX92 1 0 :1:6 
 `uc 1 SPEN2 1 0 :1:7 
 ]
-[s S962 . 1 `uc 1 RCD82 1 0 :1:0 
+[s S793 . 1 `uc 1 RCD82 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 RC8_92 1 0 :1:6 
 ]
-[s S966 . 1 `uc 1 . 1 0 :6:0 
+[s S797 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 RC92 1 0 :1:6 
 ]
-[u S969 . 1 `S323 1 . 1 0 `S953 1 . 1 0 `S962 1 . 1 0 `S966 1 . 1 0 ]
-[v _RCSTA2bits RCSTA2bits `VES969  1 e 1 @4006 ]
+[u S800 . 1 `S218 1 . 1 0 `S784 1 . 1 0 `S793 1 . 1 0 `S797 1 . 1 0 ]
+[v _RCSTA2bits RCSTA2bits `VES800  1 e 1 @4006 ]
 "31792
 [v _BAUDCON1 BAUDCON1 `VEuc  1 e 1 @4007 ]
 "32142
 [v _RCSTA1 RCSTA1 `VEuc  1 e 1 @4011 ]
 "32197
-[s S332 . 1 `uc 1 RCD8 1 0 :1:0 
+[s S227 . 1 `uc 1 RCD8 1 0 :1:0 
 `uc 1 . 1 0 :2:1 
 `uc 1 ADEN 1 0 :1:3 
 `uc 1 . 1 0 :2:4 
 `uc 1 RC9 1 0 :1:6 
 ]
-[s S338 . 1 `uc 1 . 1 0 :6:0 
+[s S233 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 NOT_RC8 1 0 :1:6 
 ]
-[s S341 . 1 `uc 1 . 1 0 :6:0 
+[s S236 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 nRC8 1 0 :1:6 
 ]
-[s S344 . 1 `uc 1 . 1 0 :6:0 
+[s S239 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 RC8_9 1 0 :1:6 
 ]
-[s S347 . 1 `uc 1 RX9D1 1 0 :1:0 
+[s S242 . 1 `uc 1 RX9D1 1 0 :1:0 
 `uc 1 OERR1 1 0 :1:1 
 `uc 1 FERR1 1 0 :1:2 
 `uc 1 ADDEN1 1 0 :1:3 
@@ -280,14 +291,14 @@ channel_1_024V_bandgap 31
 `uc 1 RX91 1 0 :1:6 
 `uc 1 SPEN1 1 0 :1:7 
 ]
-[s S356 . 1 `uc 1 . 1 0 :5:0 
+[s S251 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 SRENA 1 0 :1:5 
 ]
-[u S359 . 1 `S323 1 . 1 0 `S332 1 . 1 0 `S338 1 . 1 0 `S341 1 . 1 0 `S344 1 . 1 0 `S347 1 . 1 0 `S356 1 . 1 0 ]
-[v _RCSTA1bits RCSTA1bits `VES359  1 e 1 @4011 ]
+[u S254 . 1 `S218 1 . 1 0 `S227 1 . 1 0 `S233 1 . 1 0 `S236 1 . 1 0 `S239 1 . 1 0 `S242 1 . 1 0 `S251 1 . 1 0 ]
+[v _RCSTA1bits RCSTA1bits `VES254  1 e 1 @4011 ]
 "32480
 [v _TXSTA1 TXSTA1 `VEuc  1 e 1 @4012 ]
-[s S259 . 1 `uc 1 TX9D 1 0 :1:0 
+[s S154 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 SENDB 1 0 :1:3 
@@ -297,17 +308,17 @@ channel_1_024V_bandgap 31
 `uc 1 CSRC 1 0 :1:7 
 ]
 "32525
-[s S268 . 1 `uc 1 TXD8 1 0 :1:0 
+[s S163 . 1 `uc 1 TXD8 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 TX8_9 1 0 :1:6 
 ]
-[s S272 . 1 `uc 1 . 1 0 :6:0 
+[s S167 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 NOT_TX8 1 0 :1:6 
 ]
-[s S275 . 1 `uc 1 . 1 0 :6:0 
+[s S170 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 nTX8 1 0 :1:6 
 ]
-[s S278 . 1 `uc 1 TX9D1 1 0 :1:0 
+[s S173 . 1 `uc 1 TX9D1 1 0 :1:0 
 `uc 1 TRMT1 1 0 :1:1 
 `uc 1 BRGH1 1 0 :1:2 
 `uc 1 SENDB1 1 0 :1:3 
@@ -316,8 +327,8 @@ channel_1_024V_bandgap 31
 `uc 1 TX91 1 0 :1:6 
 `uc 1 CSRC1 1 0 :1:7 
 ]
-[u S287 . 1 `S259 1 . 1 0 `S268 1 . 1 0 `S272 1 . 1 0 `S275 1 . 1 0 `S278 1 . 1 0 ]
-[v _TXSTA1bits TXSTA1bits `VES287  1 e 1 @4012 ]
+[u S182 . 1 `S154 1 . 1 0 `S163 1 . 1 0 `S167 1 . 1 0 `S170 1 . 1 0 `S173 1 . 1 0 ]
+[v _TXSTA1bits TXSTA1bits `VES182  1 e 1 @4012 ]
 "32768
 [v _TXREG1 TXREG1 `VEuc  1 e 1 @4013 ]
 "32806
@@ -329,7 +340,7 @@ channel_1_024V_bandgap 31
 "33622
 [v _TXSTA2 TXSTA2 `VEuc  1 e 1 @4026 ]
 "33654
-[s S903 . 1 `uc 1 TX9D2 1 0 :1:0 
+[s S734 . 1 `uc 1 TX9D2 1 0 :1:0 
 `uc 1 TRMT2 1 0 :1:1 
 `uc 1 BRGH2 1 0 :1:2 
 `uc 1 SENDB2 1 0 :1:3 
@@ -339,81 +350,23 @@ channel_1_024V_bandgap 31
 `uc 1 CSRC2 1 0 :1:7 
 ]
 "33654
-[s S912 . 1 `uc 1 TXD82 1 0 :1:0 
+[s S743 . 1 `uc 1 TXD82 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 TX8_92 1 0 :1:6 
 ]
 "33654
-[u S916 . 1 `S259 1 . 1 0 `S903 1 . 1 0 `S912 1 . 1 0 ]
+[u S747 . 1 `S154 1 . 1 0 `S734 1 . 1 0 `S743 1 . 1 0 ]
 "33654
 "33654
-[v _TXSTA2bits TXSTA2bits `VES916  1 e 1 @4026 ]
-"33749
-[v _CCP1CON CCP1CON `VEuc  1 e 1 @4027 ]
-"33948
-[v _CCPR1L CCPR1L `VEuc  1 e 1 @4028 ]
-"33968
-[v _CCPR1H CCPR1H `VEuc  1 e 1 @4029 ]
-"34208
-[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
-"34279
-[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
-"34383
-[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
-[s S35 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 GO_NOT_DONE 1 0 :1:1 
-]
-"34428
-[s S38 . 1 `uc 1 ADON 1 0 :1:0 
-`uc 1 GO_nDONE 1 0 :1:1 
-`uc 1 CHS 1 0 :5:2 
-]
-"34428
-[s S42 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 DONE 1 0 :1:1 
-`uc 1 CHS0 1 0 :1:2 
-`uc 1 CHS1 1 0 :1:3 
-`uc 1 CHS2 1 0 :1:4 
-`uc 1 CHS3 1 0 :1:5 
-`uc 1 CHS4 1 0 :1:6 
-]
-"34428
-[s S50 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 GO 1 0 :1:1 
-]
-"34428
-[s S53 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 NOT_DONE 1 0 :1:1 
-]
-"34428
-[s S56 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 nDONE 1 0 :1:1 
-]
-"34428
-[s S59 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 GODONE 1 0 :1:1 
-]
-"34428
-[s S62 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 GO_DONE 1 0 :1:1 
-]
-"34428
-[u S65 . 1 `S35 1 . 1 0 `S38 1 . 1 0 `S42 1 . 1 0 `S50 1 . 1 0 `S53 1 . 1 0 `S56 1 . 1 0 `S59 1 . 1 0 `S62 1 . 1 0 ]
-"34428
-"34428
-[v _ADCON0bits ADCON0bits `VES65  1 e 1 @4034 ]
-"34515
-[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
-"34535
-[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+[v _TXSTA2bits TXSTA2bits `VES747  1 e 1 @4026 ]
 "35042
 [v _T2CON T2CON `VEuc  1 e 1 @4042 ]
-[s S710 . 1 `uc 1 T2CKPS 1 0 :2:0 
+[s S541 . 1 `uc 1 T2CKPS 1 0 :2:0 
 `uc 1 TMR2ON 1 0 :1:2 
 `uc 1 T2OUTPS 1 0 :4:3 
 ]
 "35063
-[s S714 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+[s S545 . 1 `uc 1 T2CKPS0 1 0 :1:0 
 `uc 1 T2CKPS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 T2OUTPS0 1 0 :1:3 
@@ -422,38 +375,38 @@ channel_1_024V_bandgap 31
 `uc 1 T2OUTPS3 1 0 :1:6 
 ]
 "35063
-[u S722 . 1 `S710 1 . 1 0 `S714 1 . 1 0 ]
+[u S553 . 1 `S541 1 . 1 0 `S545 1 . 1 0 ]
 "35063
 "35063
-[v _T2CONbits T2CONbits `VES722  1 e 1 @4042 ]
+[v _T2CONbits T2CONbits `VES553  1 e 1 @4042 ]
 "35113
 [v _PR2 PR2 `VEuc  1 e 1 @4043 ]
 "35239
 [v _TMR2 TMR2 `VEuc  1 e 1 @4044 ]
-[s S1090 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+[s S921 . 1 `uc 1 NOT_BOR 1 0 :1:0 
 ]
 "35456
-[s S1092 . 1 `uc 1 . 1 0 :1:0 
+[s S923 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 NOT_POR 1 0 :1:1 
 ]
 "35456
-[s S1095 . 1 `uc 1 . 1 0 :2:0 
+[s S926 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 NOT_PD 1 0 :1:2 
 ]
 "35456
-[s S1098 . 1 `uc 1 . 1 0 :3:0 
+[s S929 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 NOT_TO 1 0 :1:3 
 ]
 "35456
-[s S1101 . 1 `uc 1 . 1 0 :4:0 
+[s S932 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 NOT_RI 1 0 :1:4 
 ]
 "35456
-[s S1104 . 1 `uc 1 . 1 0 :5:0 
+[s S935 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 NOT_CM 1 0 :1:5 
 ]
 "35456
-[s S1107 . 1 `uc 1 nBOR 1 0 :1:0 
+[s S938 . 1 `uc 1 nBOR 1 0 :1:0 
 `uc 1 nPOR 1 0 :1:1 
 `uc 1 nPD 1 0 :1:2 
 `uc 1 nTO 1 0 :1:3 
@@ -463,7 +416,7 @@ channel_1_024V_bandgap 31
 `uc 1 IPEN 1 0 :1:7 
 ]
 "35456
-[s S1116 . 1 `uc 1 BOR 1 0 :1:0 
+[s S947 . 1 `uc 1 BOR 1 0 :1:0 
 `uc 1 POR 1 0 :1:1 
 `uc 1 PD 1 0 :1:2 
 `uc 1 TO 1 0 :1:3 
@@ -471,19 +424,19 @@ channel_1_024V_bandgap 31
 `uc 1 CM 1 0 :1:5 
 ]
 "35456
-[u S1123 . 1 `S1090 1 . 1 0 `S1092 1 . 1 0 `S1095 1 . 1 0 `S1098 1 . 1 0 `S1101 1 . 1 0 `S1104 1 . 1 0 `S1107 1 . 1 0 `S1116 1 . 1 0 ]
+[u S954 . 1 `S921 1 . 1 0 `S923 1 . 1 0 `S926 1 . 1 0 `S929 1 . 1 0 `S932 1 . 1 0 `S935 1 . 1 0 `S938 1 . 1 0 `S947 1 . 1 0 ]
 "35456
 "35456
-[v _RCONbits RCONbits `VES1123  1 e 1 @4048 ]
+[v _RCONbits RCONbits `VES954  1 e 1 @4048 ]
 "35621
 [v _OSCCON2 OSCCON2 `VEuc  1 e 1 @4050 ]
 "35693
 [v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
-[s S511 . 1 `uc 1 . 1 0 :7:0 
+[s S402 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 NOT_RBPU 1 0 :1:7 
 ]
 "36579
-[s S514 . 1 `uc 1 RBIP 1 0 :1:0 
+[s S405 . 1 `uc 1 RBIP 1 0 :1:0 
 `uc 1 INT3IP 1 0 :1:1 
 `uc 1 TMR0IP 1 0 :1:2 
 `uc 1 INTEDG3 1 0 :1:3 
@@ -493,18 +446,18 @@ channel_1_024V_bandgap 31
 `uc 1 nRBPU 1 0 :1:7 
 ]
 "36579
-[s S523 . 1 `uc 1 . 1 0 :1:0 
+[s S414 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 INT3P 1 0 :1:1 
 `uc 1 T0IP 1 0 :1:2 
 `uc 1 . 1 0 :4:3 
 `uc 1 RBPU 1 0 :1:7 
 ]
 "36579
-[u S529 . 1 `S511 1 . 1 0 `S514 1 . 1 0 `S523 1 . 1 0 ]
+[u S420 . 1 `S402 1 . 1 0 `S405 1 . 1 0 `S414 1 . 1 0 ]
 "36579
 "36579
-[v _INTCON2bits INTCON2bits `VES529  1 e 1 @4081 ]
-[s S552 . 1 `uc 1 RBIF 1 0 :1:0 
+[v _INTCON2bits INTCON2bits `VES420  1 e 1 @4081 ]
+[s S443 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INT0IF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 RBIE 1 0 :1:3 
@@ -514,7 +467,7 @@ channel_1_024V_bandgap 31
 `uc 1 GIE_GIEH 1 0 :1:7 
 ]
 "36681
-[s S561 . 1 `uc 1 . 1 0 :1:0 
+[s S452 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 INT0F 1 0 :1:1 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -524,15 +477,20 @@ channel_1_024V_bandgap 31
 `uc 1 GIE 1 0 :1:7 
 ]
 "36681
-[s S570 . 1 `uc 1 . 1 0 :6:0 
+[s S461 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 GIEL 1 0 :1:6 
 `uc 1 GIEH 1 0 :1:7 
 ]
 "36681
-[u S574 . 1 `S552 1 . 1 0 `S561 1 . 1 0 `S570 1 . 1 0 ]
+[u S465 . 1 `S443 1 . 1 0 `S452 1 . 1 0 `S461 1 . 1 0 ]
 "36681
 "36681
-[v _INTCONbits INTCONbits `VES574  1 e 1 @4082 ]
+[v _INTCONbits INTCONbits `VES465  1 e 1 @4082 ]
+"153 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"154
+[v _flags flags `uc  1 s 1 flags ]
 "62 C:\Documents\Prog\TP2MI.X\mcc_generated_files/eusart1.c
 [v _eusart1TxHead eusart1TxHead `VEuc  1 e 1 0 ]
 "63
@@ -547,18 +505,18 @@ channel_1_024V_bandgap 31
 [v _eusart1RxTail eusart1RxTail `VEuc  1 e 1 0 ]
 "69
 [v _eusart1RxBuffer eusart1RxBuffer `VE[8]uc  1 e 8 0 ]
-[s S163 . 1 `uc 1 perr 1 0 :1:0 
+[s S58 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "70
-[u S168 . 1 `S163 1 . 1 0 `uc 1 status 1 0 ]
-[v _eusart1RxStatusBuffer eusart1RxStatusBuffer `VE[8]S168  1 e 8 0 ]
+[u S63 . 1 `S58 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusart1RxStatusBuffer eusart1RxStatusBuffer `VE[8]S63  1 e 8 0 ]
 "71
 [v _eusart1RxCount eusart1RxCount `VEuc  1 e 1 0 ]
 "72
-[v _eusart1RxLastError eusart1RxLastError `VES168  1 e 1 0 ]
+[v _eusart1RxLastError eusart1RxLastError `VES63  1 e 1 0 ]
 "77
 [v _EUSART1_TxDefaultInterruptHandler EUSART1_TxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
 "78
@@ -584,11 +542,11 @@ channel_1_024V_bandgap 31
 "69
 [v _eusart2RxBuffer eusart2RxBuffer `VE[8]uc  1 e 8 0 ]
 "70
-[v _eusart2RxStatusBuffer eusart2RxStatusBuffer `VE[8]S168  1 e 8 0 ]
+[v _eusart2RxStatusBuffer eusart2RxStatusBuffer `VE[8]S63  1 e 8 0 ]
 "71
 [v _eusart2RxCount eusart2RxCount `VEuc  1 e 1 0 ]
 "72
-[v _eusart2RxLastError eusart2RxLastError `VES168  1 e 1 0 ]
+[v _eusart2RxLastError eusart2RxLastError `VES63  1 e 1 0 ]
 "77
 [v _EUSART2_TxDefaultInterruptHandler EUSART2_TxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
 "78
@@ -599,10 +557,14 @@ channel_1_024V_bandgap 31
 [v _EUSART2_OverrunErrorHandler EUSART2_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "82
 [v _EUSART2_ErrorHandler EUSART2_ErrorHandler `*.37(v  1 e 2 0 ]
-"50 C:\Documents\Prog\TP2MI.X\main.c
+"56 C:\Documents\Prog\TP2MI.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"77
+"80
+[v main@dutyValue dutyValue `us  1 a 2 2 ]
+"79
+[v main@RxData RxData `i  1 a 2 0 ]
+"111
 } 0
 "23 C:\Documents\Prog\TP2MI.X\ecran.c
 [v _videEcran videEcran `(v  1 e 1 0 ]
@@ -617,10 +579,69 @@ channel_1_024V_bandgap 31
 [v EUSART2_Write@txData txData `uc  1 a 1 4 ]
 "194
 } 0
+"5 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+"8
+[v printf@ap ap `[1]*.30v  1 a 1 28 ]
+"5
+[v printf@fmt fmt `*.31Cuc  1 p 1 25 ]
+"13
+} 0
+"1817 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1820
+[v vfprintf@cfmt cfmt `*.31uc  1 a 1 24 ]
+[s S1679 _IO_FILE 0 ]
+"1817
+[v vfprintf@fp fp `*.39S1679  1 p 2 20 ]
+[v vfprintf@fmt fmt `*.31Cuc  1 p 1 22 ]
+[v vfprintf@ap ap `*.30*.30v  1 p 1 23 ]
+"1840
+} 0
+"1177
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+{
+"1179
+[v vfpfcnvrt@c c `uc  1 a 1 19 ]
+[s S1679 _IO_FILE 0 ]
+"1177
+[v vfpfcnvrt@fp fp `*.39S1679  1 p 2 15 ]
+[v vfpfcnvrt@fmt fmt `*.30*.31uc  1 p 1 17 ]
+[v vfpfcnvrt@ap ap `*.30*.30v  1 p 1 18 ]
+"1814
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 6 ]
+[u S1657 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S1660 _IO_FILE 12 `S1657 1 . 3 0 `i 1 count 2 3 `[3]uc 1 ungetbuf 3 5 `i 1 ungetcnt 2 8 `i 1 limit 2 10 ]
+[v fputc@fp fp `*.39S1660  1 p 2 8 ]
+"24
+} 0
+"201 C:\Documents\Prog\TP2MI.X\mcc_generated_files/eusart1.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+[v putch@txData txData `uc  1 a 1 wreg ]
+[v putch@txData txData `uc  1 a 1 wreg ]
+"203
+[v putch@txData txData `uc  1 a 1 5 ]
+"204
+} 0
+"173
+[v _EUSART1_Write EUSART1_Write `(v  1 e 1 0 ]
+{
+[v EUSART1_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART1_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART1_Write@txData txData `uc  1 a 1 4 ]
+"194
+} 0
 "50 C:\Documents\Prog\TP2MI.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
-"62
+"60
 } 0
 "62 C:\Documents\Prog\TP2MI.X\mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
@@ -637,10 +658,10 @@ channel_1_024V_bandgap 31
 {
 "90
 } 0
-"64 C:\Documents\Prog\TP2MI.X\mcc_generated_files/mcc.c
+"62 C:\Documents\Prog\TP2MI.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
-"74
+"72
 } 0
 "52 C:\Documents\Prog\TP2MI.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
@@ -717,15 +738,18 @@ channel_1_024V_bandgap 31
 [v EUSART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 4 ]
 "283
 } 0
-"49 C:\Documents\Prog\TP2MI.X\mcc_generated_files/eccp1.c
-[v _ECCP1_Initialize ECCP1_Initialize `(v  1 e 1 0 ]
+"82 C:\Documents\Prog\TP2MI.X\mcc_generated_files/pwm2.c
+[v _PWM2_LoadDutyValue PWM2_LoadDutyValue `(v  1 e 1 0 ]
 {
-"60
+[v PWM2_LoadDutyValue@dutyValue dutyValue `us  1 p 2 4 ]
+"89
 } 0
-"62 C:\Documents\Prog\TP2MI.X\mcc_generated_files/adc.c
-[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+"151 C:\Documents\Prog\TP2MI.X\mcc_generated_files/eusart1.c
+[v _EUSART1_Read EUSART1_Read `(uc  1 e 1 0 ]
 {
-"81
+"153
+[v EUSART1_Read@readValue readValue `uc  1 a 1 4 ]
+"171
 } 0
 "58 C:\Documents\Prog\TP2MI.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
