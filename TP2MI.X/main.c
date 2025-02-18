@@ -19,6 +19,12 @@
 */
 
 /*
+ Nom de l'etudiant: Mathieu Carignan
+ Date: 11 Février 2025
+ Description: Un code qui barre ou debarre une porte à l'aide d'un servo-moteur.
+*/
+
+/*
     (c) 2018 Microchip Technology Inc. and its subsidiaries. 
     
     Subject to your compliance with these terms, you may use Microchip software and any 
@@ -76,8 +82,11 @@ void main(void)
 
     videEcran();
     
+    // Varable pour recevoir ce que l'utilisateur emet de son clavier.
     int RxData;
+    // Position de départ du servo-moteur
     uint16_t dutyValue = 46;
+    // Etat de base pour la machine d'etat.
     int Etat = Neutre;
     
     while (1)
